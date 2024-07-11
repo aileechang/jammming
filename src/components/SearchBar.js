@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import styles from "../css/SearchResults.module.css";
+import styles from "../css/Global.module.css";
 
-function SearchBar(props) {
+function SearchBar({ searchQuery, handleSearch }) {
     return (
         <form >
             <input type="text"
                 placeholder="Search for a song..." 
-                value={props.searchQuery}
-                onChange={props.handleChange}
+                value={searchQuery}
+                onChange={handleSearch}
             />
-            <button onClick={props.handleSubmit}>
+            <button onClick={handleSearch}>
                 Search
             </button>
         </form>

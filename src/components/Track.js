@@ -1,23 +1,25 @@
 import React from "react";
-import styles from "../css/SearchResults.module.css";
+import styles from "../css/Global.module.css";
 
-function Track(props) {
+function Track({ track, onAdd, onRemove, isInPlaylist }) {
     return (
-        <ul>
-            {props.filteredSongList.map((result, index) => (
-                <div key={index} className={styles.listItemContainer} >
-                    <li>
-                        <h4>{result.title}</h4>
-                        <div>
-                            <p>{result.artist}</p>
-                            <p>{result.album}</p>
-                        </div>
-                    </li>
-                    <button className={styles.listButton} >+</button>                        
+        <div className={styles.listItemContainer}>
+            <li>
+                <h4>{track.title}</h4>
+                <div>
+                    <p>{track.artist}</p>
+                    <p>{track.album}</p>
                 </div>
-            ))}
-        </ul>
+            </li>
+            {isInPlaylist ? (
+                <button className={styles.listButton}
+                    onClick={() => onRemove(track.id)}>-</button>
+            ) : (
+                <button className={styles.listButton}
+                    onClick={() => onAdd(track)}>+</button>
+            )}
+        </div>
     );
-}
+};
 
 export default Track;
