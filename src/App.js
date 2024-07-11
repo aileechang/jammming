@@ -33,6 +33,10 @@ function App() {
     setFilteredData(filtered);
   };
 
+  function handleChange(e) {
+    setPlaylistName(e.target.value);
+  };
+
   const isTrackInPlaylist = (track) => {
     return playlist.some((item) => item.id === track.id);
   };
@@ -62,6 +66,7 @@ function App() {
            />
         <Playlist 
           playlistName={playlistName}
+          handleChange={handleChange}
           playlist={playlist}
           onRemove={removeTrackFromPlaylist}
         />

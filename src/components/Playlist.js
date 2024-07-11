@@ -3,10 +3,10 @@ import styles from "../css/Global.module.css";
 import PlaylistBar from "./PlaylistBar";
 import Tracklist from "./Tracklist";
 
-function Playlist({ playlistName, playlist, onRemove }) {
+function Playlist({ playlistName, handleChange, playlist, onRemove }) {
     return (
         <div className={styles.container} >
-            <PlaylistBar playlistName={playlistName} />
+            <PlaylistBar playlistName={playlistName} handleChange={handleChange} />
             <Tracklist tracks={playlist} onRemove={onRemove} />
         </div>
     );
