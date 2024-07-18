@@ -1,0 +1,59 @@
+body,
+html,
+#root {
+  height: 100%;
+}
+
+html {
+  font-size: 18px;
+}
+
+h1 {
+  padding: .85rem 0 0;
+  background-color: #161a1d;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #ba181b;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.55rem;
+}
+
+.Header-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.22rem;
+  text-align: center;
+  padding: 0 0 .85rem 0;
+  margin: 0;
+  background-color: #161a1d;
+  color: #f5f3f4;
+}
+
+.App {
+  height: 100%;
+  padding: 5% 10% 15%;
+  background-image: url('./background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+.App-playlist {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .App-playlist {
+    align-items: center;
+    flex-direction: column;
+  }
+}

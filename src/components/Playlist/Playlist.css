@@ -1,0 +1,85 @@
+.Playlist {
+  width: 47%;
+  max-height: 1050px;
+  overflow-y: scroll;
+  padding: .88rem;
+  background-color: #161a1d91;
+  box-shadow: 0 4px 4px 2px #161A1D;
+  margin-left: 1rem;
+  }
+
+  .Playlist-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1.5rem 6.1rem 1.5rem;
+  }
+
+  .Playlist-bar h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+
+  .My-playlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .My-playlist input {
+    width: 65%;
+    padding: .88rem 0;
+    border: 1px solid #fff;
+    color: #010c3f;
+    text-align: center;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .Playlist-save {
+    cursor: pointer;
+    width: 10rem;
+    padding: .77rem 0;
+    border-radius: 54px;
+    background-color: #5f5b5aef;
+    text-align: center;
+    font-size: .833rem;
+    transition: background-color .25s;
+    border: 0px;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .Playlist-save:hover {
+    background-color: #ffffffdd;
+    color: #A4161A;
+    font-weight: bold;
+  }
+  
+  ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .Playlist {
+      width: 90%;
+      margin: 0;
+    }
+
+    .My-playlist {
+      flex-direction: column;
+    }
+
+    .My-playlist input {
+      margin: 0 0 1rem 0;
+      width: 85%;
+    }
+
+    .Playlist-save {
+      margin: 0;
+    }
+  }
