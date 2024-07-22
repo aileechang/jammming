@@ -9,7 +9,7 @@ const SearchResults = (props) => {
   return (
     <div className="SearchResults">
       <SearchBar onSearch={props.search} />
-      <h2>Results</h2>
+      {props.searchResults.length > 0 && <h2>Results</h2>}
       <Tracklist tracks={props.searchResults} onAdd={props.onAdd} />
     </div>
   );

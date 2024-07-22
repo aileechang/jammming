@@ -7,6 +7,8 @@
   }
 
   .SearchBar-title {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
     width: 100%;
     text-align: center;
     margin-bottom: 1rem;
@@ -37,10 +39,11 @@
     border-radius: 54px;
     background-color: #5f5b5aef;
     text-align: center;
-    font-size: .833rem;
+    font-size: .9rem;
     transition: background-color .25s;
-    border: 0px;
+    border: 3px solid #fff;
     color: #fff;
+    font-family: "Lato", sans-serif;
     font-weight: 500;
   }
   
@@ -48,6 +51,7 @@
     background-color: #ffffffdd;
     color: #A4161A;
     font-weight: bold;
+    border: 3px solid #A4161A;
   }
 
   @media only screen and (max-width: 1024px) {
