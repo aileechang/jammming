@@ -47,7 +47,7 @@ JAMMMING is a web application that lets you search for songs using the Spotify A
 
 2. Get your Client ID and set the Redirect URI to `http://localhost:3000`.
 
-3. Createa file name name `Spotify.js` inside the `src/util` directory and add your credentials:
+3. Create a file named `Spotify.js` inside the `src/util` directory and add your credentials:
 
     ```JavaScript
     const clientId = 'YOUR_SPOTIFY_CLIENT_ID';
@@ -62,7 +62,7 @@ JAMMMING is a web application that lets you search for songs using the Spotify A
     ```
 
 ### Usage
-1. **Search for songs**: Enter a search term in the search bar and press enter.
+1. **Search for songs**: Enter a search term in the search bar and press search.
 
 2. **Add songs to the  playlist**: Click the "+" button next to a song to add it to your playlist.
 
